@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html onbeforeunload="return myFunction()">
+<head>
+<link href="WineCellar.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<center>
+
+
+<h1>J&L Wine Cellar</h1>
+
+
+<label for="wines">Sort Options:</label>
+
+
+<select name="wines" id="wines" onchange="sortlist(this.options[this.selectedIndex].value)">
+   <option value="1">Location</option>
+   <option value="2">Varietal</option>
+   <option value="3">Vintage</option>
+   <option value="4">Winery</option>
+</select>
+
+
+</center>
+
+
+<p>
+
+
+<label id="winelist"></label>
+
+
+<script src="WineCellar.txt"></script>
+
+
+<script src="WineCellar.js"></script>
+
+
+</body>
+</html>
